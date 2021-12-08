@@ -1,0 +1,21 @@
+.main{
+  width: 400px;
+  height: 300px;
+  margin-left: 200px;
+  margin-top: 200px;
+  border: solid black 2px;
+  padding: 40px;
+  border-radius: 10px;
+  background-color: beige;
+}
+.heading{
+  background-color: blueviolet;
+  text-align: center;
+  border-radius: 10px;
+  border-color: aqua;
+  font-size: 35px;
+}
+.submit{
+  text-align: center;
+  margin-left: 150px;
+}

@@ -1,0 +1,25 @@
+<div class="main">
+  <div class="heading">Trial Free for seven days</div><br/>
+<form [formGroup]="myReactiveForm" (ngSubmit)="onSubmit()">
+
+  <label for="fname">First Name </label>
+  <input type="text" id="fname" name="fname" formControlName="fname" ><br/><br/>
+
+  <label for="name">Last Name </label>
+  <input type="text" id="lname" name="lname" formControlName="lname"><br/><br/>
+
+  <label for="Email">Email Address </label>
+  <input type="text" id="Email" name="Email" formControlName="Email"><br/><br/>
+  <small>enter email</small>
+
+  <label for="pno">Phone Number </label>
+  <input type="text" id="pno" name="pno" formControlName="pno" ><br/><br/>
+
+  <label for="Dname">Department Name </label>
+  <input type="text" id="Dname" name="Dname" formControlName="Dname"><br/><br/>
+
+  <button type="submit" class="submit">Submit</button>
+
+
+</form>
+</div>

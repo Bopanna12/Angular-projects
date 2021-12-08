@@ -1,0 +1,12 @@
+.productlist{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.list{
+  display: flex;
+  justify-content: space-evenly;
+  height: 100px;
+  background-color: violet;
+  border-radius: 20px;
+}

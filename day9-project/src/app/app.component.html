@@ -1,0 +1,49 @@
+
+<app-nav-bar></app-nav-bar>
+<app-footer></app-footer>
+<app-login></app-login>
+<div class="main">
+<app-signup></app-signup>
+<app-signup></app-signup>
+<app-signup></app-signup>
+
+</div>
+<button (click)="getN('SHANKER')">Click Here</button><br/>
+<h1>this is for keyup</h1>
+
+<input type="text" (keyup)="getName1()"><br/>
+<h1>this is for keydown</h1>
+
+<input type="text" (keydown)="getName2()"><br/>
+<br/>
+<p>mouse pointing event </p>
+<button (mouseover)="getN1()">Submit</button>
+<br/><br/>
+<button (mousedown)="getN2()">down here</button>
+
+<h1>Property Binding example</h1>
+<input type="text" value={{name}} disabled={{disableBox}}>
+<input type="text" [value]="name" [disabled]="disableBox">
+<button (click)="enableInput()">Enable Here</button>
+
+<h1>Place Holder example</h1>
+<input type="tel"   placeholder="enter valid Number" disabled={{disableBox1}}>
+<input type="tel"   placeholder="enter valid Number" [disabled]="disableBox1">
+<button (click)="enablePlaceholder()">Enter valid Number</button>
+
+
+<h1>Conditional examples</h1>
+<h1 *ngIf="day">this is true</h1>
+
+<h1>example for else block</h1>
+<h1 *ngIf="month else elseBlock">this is true</h1>
+<ng-template #elseBlock><h1>this is false</h1></ng-template>
+
+<h1>Other example</h1>
+<h1 *ngIf="month1=='jan' else elseBlock">its jan</h1>
+<ng-template #elseBlock><h1>its wrong</h1></ng-template>
+
+<h2>else part</h2>
+<h1 *ngIf="month2=='jan' else elseBlock">its jan</h1>
+<ng-template #elseBlock><h1>its wrong</h1></ng-template>
+

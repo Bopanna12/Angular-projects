@@ -1,0 +1,107 @@
+<app-temp></app-temp>
+<h1 *ngFor="let name of details">
+    {{name.fname}}
+    {{name.age}}
+    {{name.ph}}
+</h1>
+<table>
+
+<tr *ngFor="let num of numbers">{{num}}</tr>
+</table>
+
+<h1 style=color:blue> Simple Example </h1>
+
+<h1 [ngStyle]="{'color':'green'}"> Example for ngStyle</h1>
+
+<h1 [ngStyle]="{'color':ngColor}"> Example for ngStyle Dynamic value</h1>
+
+<h1 [ngStyle]="{'color':ngColor==='white'?'blue':'purple'}"> Example for ngStyle using ternary opperator</h1>
+
+<h2 [ngClass]="'shuffelColor'"> Example for ng Class</h2>
+
+<h2 [ngClass]="'shuffelColor another'"> Example for ng Class using another class for background</h2>
+
+<h2 [ngClass]="evenColor"> Example for ng Class by passing variable</h2>
+
+<h1 appHighlight> this is for elementref or custom directive example</h1>
+<br/><br/>
+
+<!--Pipes example-->
+<h1>{{'THIS IS IN UPPER CASE' | lowercase}}</h1>
+<h2>{{'this is in lower case' | uppercase}}</h2>
+<h1>{{'46347' | currency}}</h1>
+<h1>{{dateExample |date}}</h1>
+<h2>{{'0.636'|percent}}</h2>
+
+<!--parameter-->
+<h1>{{'46347' | currency:'INR'}}</h1>
+<h1>{{dateExample |date:'long'}}</h1>
+<h1>{{dateExample |date:'short'}}</h1>
+<h1>{{dateExample |date:'dd/MM/yy'}}</h1>
+<h2>{{'0.636'|percent:'2.1-2'}}</h2>
+
+<!--chaining example-->
+<h1>{{dateExample |date|uppercase}}</h1>
+<h1>{{'74674'|currency:'INR'|uppercase}}</h1>
+
+<app-login></app-login>
+<app-design></app-design>
+
+
+<div class="content">
+  <h1> Employee Interest Survey Form</h1>
+  <form (ngSubmit)="onSubmit(myForm)" #myForm="ngForm">
+  <label for="ename">Enter your name:</label>
+  <input type="text" id="ename" name="ename" [(ngModel)]="ename" required minlength="4"><br/><br/>
+  <label for="dname">Enter your Department:</label>
+  <input type="text" id="dname" name="dname" [(ngModel)]="dname"required=><br/>
+  <br/>
+  Tell us a Little about yourself :<textarea rows="4" cols="100" name="coment" [(ngModel)]="coment">Enter text here...</textarea>
+  <p>Do you Exercise at Home?</p>
+  <input type="radio" id="html" value="html">
+  <label for="html">Yes</label>
+  <input type="radio" id="html1" value="html1">
+  <label for="html1">No</label>
+  <p>How do you like to read about your favourite topic</p>
+  <input type="checkbox" id="books" name="books"required>
+  <label for="books" >Books</label>
+
+  <input type="checkbox" id="online" name="online"required>
+  <label for="online" >Online Resource</label>
+
+  <input type="checkbox" id="app" name="app"required>
+  <label for="app" >Phone App</label>
+
+  <input type="checkbox" id="mag" name="mag"required>
+  <label for="mag" >Magazines</label>
+  <br/><br/>
+
+  <label for="cars">What genre of movies do you like :</label>
+  <select name="cars" [(ngModel)]="cars">
+  <option
+  value="comedy">Comedy</option>
+  <option
+  value="thril">Thriller</option>
+  <option
+  value="rom">Romantics</option>
+  <option
+  value="Hor">Horror</option>
+  </select>
+  <br/><br/>
+
+  <button type="submit" [disabled]="!myForm.valid"> Submit</button>
+
+
+  </form>
+  </div>
+<app-nav-bar></app-nav-bar>
+
+
+
+
+
+
+
+
+
+

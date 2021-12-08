@@ -1,0 +1,12 @@
+.navbar{
+display: flex;
+justify-content: space-evenly;
+background-color: greenyellow;
+height: 60px;
+align-items: center;
+border-radius: 20px;
+}
+
+
+
+

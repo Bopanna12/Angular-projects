@@ -1,0 +1,23 @@
+.page{
+    
+    width:225px;
+    height:500px;
+    background-color: orange;
+    border-radius: 10px;
+
+
+}
+
+.inner{
+    padding: 20px;
+    padding-top: 50px;
+}
+.content{
+    padding:20px
+}
+.a{
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    margin: 20px;
+}
